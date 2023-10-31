@@ -28,15 +28,17 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .product img, .product-detail img {
+	 font-family: 'Amandine', sans-serif;
     width: 100%;
     max-width: 300px;
     height: auto;
 }
 a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
 }
 footer {
+	font-size: 12px;
     background-color: #333;
     color: #fff;
     padding: 20px 0;
@@ -124,4 +126,28 @@ footer {
         top: 60px;
         right: 20px;
     }
+}
+
+
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+/* Style individual products */
+.product {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
